@@ -31,10 +31,7 @@ import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras import Model
 from os import getcwd
-
 path_inception = '/content/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5'
-
-
 # Import the inception model
 from tensorflow.keras.applications.inception_v3 import InceptionV3
 
@@ -44,14 +41,11 @@ local_weights_file = path_inception
 pre_trained_model = InceptionV3(include_top = False,
                                 input_shape = (150, 150, 3),
                                 weights = None)
-
 pre_trained_model.load_weights(local_weights_file)
 
 # Make all the layers in the pre-trained model non-trainable
 for layer in pre_trained_model.layers:
    layer.trainable = False
-
-
 print('Name: R Guruprasad            Register Number: 212222240033')
 pre_trained_model.summary()
 
