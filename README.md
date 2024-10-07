@@ -177,15 +177,7 @@ plt.title('Name: R Guruprasad          Register Number:  212222240033    ')
 plt.title('Training and validation Loss')
 plt.legend(loc=0)
 plt.figure()
-
-
 plt.show()
-
-
-
-
-
-
 ```
 
 
