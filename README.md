@@ -3,9 +3,6 @@
 To Implement Transfer Learning for Horses_vs_humans dataset classification using InceptionV3 architecture.
 ## Problem Statement and Dataset
 ### https://laurencemoroney.com/datasets.html
-</br>
-</br>
-</br>
 
 ## DESIGN STEPS
 
