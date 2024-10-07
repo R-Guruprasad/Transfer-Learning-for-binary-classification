@@ -2,7 +2,13 @@
 ## Aim
 To Implement Transfer Learning for Horses_vs_humans dataset classification using InceptionV3 architecture.
 ## Problem Statement and Dataset
-### https://laurencemoroney.com/datasets.html
+
+The set contains 500 rendered images of various species of horse in multiple poses in multiple locations.
+It also includes 527 rendered images of humans in different poses and backgrounds. I emphasized the diversity of humans,
+so there are both men and women and Asian, Black, South Asian, and Caucasians present in the training set. 
+The validation set adds six different figures to ensure breadth of data.
+
+![image](https://github.com/user-attachments/assets/93498128-e51f-491c-be53-670ce5a1d2c7)
 
 ## DESIGN STEPS
 
