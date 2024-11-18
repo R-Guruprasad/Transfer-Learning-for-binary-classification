@@ -51,7 +51,6 @@ for layer in pre_trained_model.layers:
    layer.trainable = False
 print('Name: R Guruprasad            Register Number: 212222240033')
 pre_trained_model.summary()
-
 last_layer = pre_trained_model.get_layer('mixed7')
 print('last layer output shape: ', last_layer.output.shape)
 last_output = last_layer.output
@@ -61,7 +60,6 @@ class EarlyStoppingCallback(tf.keras.callbacks.Callback):
         if logs['accuracy']>0.97:
             self.model.stop_training = True
             print("\nReached 97% accuracy so cancelling training!")
-
 x = tf.keras.layers.Flatten()(last_output)
 # Add a fully connected layer with 1,024 hidden units and ReLU activation
 x = tf.keras.layers.Dense(1024, activation='relu')(x)
@@ -69,10 +67,8 @@ x = tf.keras.layers.Dense(1024, activation='relu')(x)
 x = tf.keras.layers.Dropout(0.2)(x)
 # Add a final sigmoid layer for classification
 x = tf.keras.layers.Dense  (1, activation='sigmoid')(x)
-
 # Append the dense network to the base model
 model = tf.keras.Model(pre_trained_model.input, x)
-
 # Print the model summary. See your dense network connected at the end.
 model.summary()
 print('Name: R Guruprasad         Register Number: 212222240033')
@@ -201,5 +197,4 @@ plt.show()
 
 
 ## RESULT
-
 Thus, transfer learning was successfully implemented for classifying horses and human
